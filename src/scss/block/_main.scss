@@ -1,0 +1,41 @@
+.main {
+
+  background-color: var(--color-beige-bg);
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 3px solid transparent;
+    border-left-color: var(--color-turquoise-bright);
+    padding-left: 12px;
+    line-height: 35px;
+    
+    font-weight: 900;
+
+    @include mobile-above {
+      padding-left: 24px;
+    }
+
+    @include tablet-above {
+      margin-top: 0;
+      padding-left: 32px;
+    }
+
+
+  }
+
+  &__about {
+
+    padding-bottom: 24px;
+
+    @include mobile-above {
+      margin-top: 32px;
+      padding-inline: 24px;
+    }
+
+    @include tablet-above {
+      margin-top: 8px;
+      padding-left: 32px;
+    }
+  }
+}

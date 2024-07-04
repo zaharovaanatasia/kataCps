@@ -1,0 +1,18 @@
+.price-menu {
+  &__title {
+    padding: 16px;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: var(--color-gray-med);
+    @include mobile-above {
+      padding-left: 24px;
+    }
+    
+  }
+  &__header {
+    background-image: linear-gradient(to right, #f8f8f8, #ffffff);
+    border-top: 1px solid var(--color-turquoise-light);
+  }
+}

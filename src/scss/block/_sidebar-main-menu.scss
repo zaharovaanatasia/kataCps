@@ -1,0 +1,25 @@
+.sidebar-main-menu {
+  margin-top: 50px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__link {
+    color: var(--color-black);
+    border: 4px solid transparent;
+    padding-left: 20px;
+    letter-spacing: 0.2px;
+
+    &:hover {
+      border: 4px solid transparent;
+      border-left-color: var(--color-turquoise-bright);
+      border-radius: -6px;
+      color: var(--color-gray-med);
+      opacity: 0.5;
+      transition-duration: var(--transition-duration);
+    }
+  }
+}

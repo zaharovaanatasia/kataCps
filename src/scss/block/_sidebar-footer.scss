@@ -1,0 +1,39 @@
+.sidebar-footer {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    padding-bottom: 25px;
+  }
+
+  &__button {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__link {
+    @include hover {
+      filter: opacity(50%);
+      transition-duration: 0.2s;
+    }
+  }
+  &__mail {
+    margin-top: 16px;
+    display: block;
+    color: var(--color-black);
+    font-weight: 700;
+  }
+  &__tel {
+    margin-top: 12px;
+    display: block;
+    color: var(--color-black);
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 0.6px;
+  }
+  &__language {
+    margin-top: 40px;
+    display: flex;
+    gap: 7px;
+  }
+}

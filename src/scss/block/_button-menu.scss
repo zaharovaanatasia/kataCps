@@ -1,0 +1,64 @@
+.button-menu {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-pink);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include hover {
+    filter: opacity(50%);
+  }
+
+  &--icon {
+    &--burger {
+      background-image: url(../img/burger-button.svg);
+
+      &::after {
+        @include mobile-above {
+          content: "";
+          display: block;
+          height: 32px;
+          position: absolute;
+          right: -20px;
+          top: 50%;
+          translate: -50% -50%;
+          width: 2px;
+          background: var(--color-gray-border);
+        }
+      }
+    }
+
+    &--service {
+      background-image: url(../img/remont-button.svg);
+    }
+
+    &--search {
+      background-image: url(../img/search-button.svg);
+    }
+    &--phone {
+      background-image: url(../img/phone-button.svg);
+    }
+    &--message {
+      background-image: url(../img/message-button.svg);
+    }
+
+    &--contact {
+      background-image: url(../img/contact-button.svg);
+    }
+    &--clouse {
+      background-image: url(../img/side-icon-clouse.svg);
+    }
+    &--siedebar-search {
+      background-image: url(../img/side-icon-search.svg);
+    }
+  }
+
+  &--margin {
+    margin-left: 78px;
+
+    @include desktop-above{
+      margin-left: 130px;
+    }
+  }
+}

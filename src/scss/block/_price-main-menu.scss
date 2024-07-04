@@ -1,0 +1,162 @@
+.price-main-menu {
+  margin: 8px 24px;
+  overflow: hidden;
+  position: relative;
+
+  @include mobile {
+    margin: 0;
+  }
+
+  &--height {
+    @include mobile-above {
+      height: 100%;
+    }
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    &:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 24px;
+      background: linear-gradient(
+        270deg,
+        var(--color-beige-bg) 0.04%,
+        rgba(248, 248, 248, 0) 100%
+      );
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      @include mobile-above {
+        display: none;
+      }
+    }
+
+    @include mobile {
+      display: block;
+      overflow: hidden;
+      margin-right: -24px;
+    }
+  }
+
+  &__body {
+    @include mobile-above {
+      background-color: var(--color-white);
+      border-radius: 6px;
+    }
+
+    @include mobile {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__row {
+    font-size: 14px;
+    padding: 16px;
+    color: #1b1c21;
+    text-align: left;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0;
+      background-color: var(--color-white);
+      min-width: 260px;
+      height: 220px;
+      padding-top: 16px;
+      position: relative;
+      border-radius: 6px;
+      margin: 0;
+    }
+  }
+
+  &__cell {
+    padding: 23px 16px;
+    min-width: 81px;
+
+    @include mobile {
+      display: block;
+      position: relative;
+    }
+
+    &::before {
+      @include mobile {
+        content: attr(data-label);
+        color: var(--color-gray-med);
+        position: absolute;
+        top: 0;
+      }
+    }
+
+    &:nth-child(3) {
+      white-space: nowrap;
+    }
+
+    &:last-child {
+      @include mobile {
+        content: attr(data-label);
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+      }
+
+      text-align: right;
+    }
+  }
+
+  &__head {
+    color: var(--color-gray-med);
+    opacity: 0.5;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__pricing-info {
+    font-size: 14px;
+    max-width: 421px;
+    line-height: 20px;
+    margin-top: 32px;
+
+    @include mobile {
+      padding-left: 16px;
+    }
+  }
+
+  &__link {
+    color: var(--color-black);
+    display: inline-block;
+    font-weight: 700;
+    margin-top: 16px;
+
+    @include mobile {
+      padding-left: 16px;
+      max-width: 220px;
+    }
+
+    &::after {
+      display: inline-block;
+      content: "";
+      background: url(../img/pink-arrow.svg) no-repeat 50%;
+      vertical-align: middle;
+      height: 27px;
+      width: 24px;
+    }
+    @include hover {
+      opacity: 0.3;
+    }
+  }
+
+  &__button {
+    @include hover {
+      opacity: 0.3;
+    }
+  }
+}

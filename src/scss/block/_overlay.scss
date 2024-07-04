@@ -1,0 +1,25 @@
+.overlay {
+  background-color: var(--color-white);
+  opacity: 0.96;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  &--zindex {
+    &--modal {
+      z-index: 150;
+    }
+
+    &--menu {
+      z-index: 50;
+    }
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+
+}

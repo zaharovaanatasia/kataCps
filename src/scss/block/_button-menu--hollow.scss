@@ -1,0 +1,16 @@
+.button-menu--hollow {
+  background-image: url(../img/brand-menu-arrow.svg);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-pink);
+  padding-right: 16px;
+  margin-left: auto;
+
+  @include hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    cursor: pointer;
+    color: var(--color-turquoise-border);
+}
+}

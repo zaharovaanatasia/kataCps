@@ -1,0 +1,19 @@
+.main-header {
+
+  padding-top: 24px;
+
+  @include tablet-above {
+    display: flex;
+    align-items: center;
+    padding-top: 42px;
+    padding-right: 25px;
+
+  }
+  &__service-menu {
+    display: none;
+
+    @include tablet-above {
+      display: flex;
+    }
+  }
+}

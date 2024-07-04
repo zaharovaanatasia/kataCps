@@ -1,0 +1,48 @@
+.button-arrow-scroll {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 16px;
+  background-color: var(--color-beige-bg);
+  margin-left: 16px;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    background: url(../img/errors-button.svg);
+    vertical-align: middle;
+    margin-right: 8px;
+    height: 24px;
+    width: 24px;
+  }
+
+  @include mobile-above {
+    margin-top: 24px;
+    display: block;
+    margin-left: 0;
+  }
+
+  &--inverted {
+    &::before {
+      @include mobile-above {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &--left {
+    &::before {
+      display: inline-block;
+      content: "";
+      background: url(../img/errors-button.svg);
+      vertical-align: middle;
+      margin-right: 8px;
+      height: 24px;
+      width: 24px;
+      justify-content: center;
+    }
+  }
+  &:active {
+    cursor: pointer;
+    color: var(--color-turquoise-border);
+  }
+}

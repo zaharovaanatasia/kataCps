@@ -1,0 +1,44 @@
+.about {
+  @include mobile-above {
+    display: flex;
+    gap: 48px;
+  }
+
+  &__text {
+    font-size: 14px;
+    margin-left: 16px;
+    margin-top: 24px;
+    margin-right: 16px;
+    line-height: 18px;
+    color: var(--color-gray-med);
+    height: 90px;
+    overflow: hidden;
+    letter-spacing: 0.2px;
+    color: var(--color-gray-black);
+
+    &--height {
+      height: auto;
+    }
+
+    @include mobile-above {
+      margin: 0;
+      min-height: 160px;
+      line-height: 20px;
+    }
+
+    @include desktop-above {
+      min-height: 150px;
+    }
+  }
+
+  &__image {
+    margin-top: 16px;
+
+    @include mobile-above {
+      min-width: 50%;
+      margin-top: 0;
+      height: auto;
+      align-self: flex-start;
+    }
+  }
+}
