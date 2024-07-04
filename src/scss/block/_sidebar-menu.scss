@@ -14,19 +14,13 @@
     -2px 0 4px 0 var(--color-gray-border);
   background-color: var(--color-white);
 
-
-  @include desktop {
-min-height: 920px;
-
+  @include desktop-above {
+    min-height: 920px;
   }
-
 
   &__sidebar-footer {
     margin-top: auto;
     padding-top: 32px;
-
-
-
   }
 
   @include tablet-above {
@@ -38,7 +32,6 @@ min-height: 920px;
   }
 
   &--hidden {
-
     @include tablet {
       display: none;
     }
