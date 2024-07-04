@@ -22,9 +22,11 @@
   }
 
   &--inverted {
+    
     &::before {
       @include mobile-above {
         transform: rotate(180deg);
+
       }
     }
   }

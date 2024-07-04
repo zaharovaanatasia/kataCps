@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-
+  transform: translateX(0);
   @include tablet-above {
     margin-left: auto;
   }
@@ -10,4 +10,6 @@
   &--hidden {
     display: none;
   }
+
+  
 }

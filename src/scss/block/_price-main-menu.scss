@@ -2,9 +2,10 @@
   margin: 8px 24px;
   overflow: hidden;
   position: relative;
+  
 
   @include mobile {
-    margin: 0;
+    margin: 8px;
   }
 
   &--height {

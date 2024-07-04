@@ -1,6 +1,9 @@
 .full-container {
   max-width: 1440px;
   position: relative;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 0 1px 0px var(--color-gray-med);
 
   @include tablet-above {
     padding-left: 320px;

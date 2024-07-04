@@ -11,7 +11,6 @@
     column-gap: 24px;
     margin-top: 24px;
     margin-left: 0;
-    transition: 0.2s;
   }
 
   @include tablet-above {
@@ -68,7 +67,7 @@
   }
 
   &::after {
-    content: "";
+    content: '';
     height: 100%;
     width: 24px;
     position: absolute;
