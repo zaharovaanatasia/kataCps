@@ -1,5 +1,4 @@
 .main-header {
-
   padding-top: 24px;
 
   @include tablet-above {
@@ -7,8 +6,8 @@
     align-items: center;
     padding-top: 30px;
     padding-right: 25px;
-
   }
+
   &__service-menu {
     display: none;
 

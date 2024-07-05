@@ -55,7 +55,7 @@
       padding-left: 0;
     }
 
-    @include tablet-above {
+    @include desktop-above {
       grid-template-columns: repeat(4, 1fr);
     }
   }
